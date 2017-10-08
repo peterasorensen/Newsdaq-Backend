@@ -25,12 +25,14 @@ def main():
     api_instance = aylien_news_api.DefaultApi()
 
     opts = {
-      'title': symbols,
-      'sort_by': 'hotness',
-      'language': ['en'],
-      'not_language': ['es', 'it'],
-      'published_at_start': start_date,
-      'published_at_end': end_date,
+        'title': symbols,
+        'sort_by': 'relevance',
+        'source_locations_country': ['US'],
+        'entities_title_type': ['Company'],
+        'language': ['en'],
+        'not_language': ['es', 'it'],
+        'published_at_start': start_date,
+        'published_at_end': end_date,
     }
 
     try:
