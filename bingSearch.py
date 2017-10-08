@@ -1,6 +1,17 @@
 import json
 import requests
+import argparse
 import csv
+
+# def main():
+#     parser = argparse.ArgumentParser(description='gettin some market data')
+#     parser.add_argument('--start_date', required=True, help="Enter a valid start date in YYYYMMDD format")
+#     parser.add_argument('--end_date', required=True, help="Enter a valid end date in YYYYMMDD format")
+#     parser.add_argument('--symbols', required=True,
+#                         help="Enter a ticker symbol or list of tickers. E.g. NDAQ or NDAQ,AAPL,MSFT")
+#
+#     args = parser.parse_args()
+
 
 global_headers = {"Ocp-Apim-Subscription-Key": "3af8dba5b91c4f7b81b8536be7f3bac2"}
 r = requests.get('https://api.cognitive.microsoft.com/bing/v5.0/news/search?q=AAPL&since=2016-10-07T01:01:01&sortBy=Date&offset=1000&count=100', headers=global_headers)

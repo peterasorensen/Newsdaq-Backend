@@ -48,9 +48,9 @@ def main():
                                     on_close = on_close)
         ws.on_open = on_open
         ws.run_forever()
-        with open('AAPLprices.json', 'w', newline='') as stockPrices:
-            print(list)
-            stockPrices.write(json.dumps(list))
+        # with open('AAPLprices.json', 'w', newline='') as stockPrices:
+        #     print(list)
+        #     stockPrices.write(json.dumps(list))
 
 if __name__ == "__main__":
    main() 
