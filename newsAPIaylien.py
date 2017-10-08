@@ -49,7 +49,7 @@ def newsArticles():
                    'URL': story.links.permalink}
           list.append(entry)
         print(json.dumps(list, default=myconverter))
-        return json.dump(list, default=myconverter)
+        return json.dumps(list, default=myconverter)
           # print(story.title + " / " + story.source.name)
     except ApiException as e:
         print("Exception when calling DefaultApi->list_stories: %s\n" % e)

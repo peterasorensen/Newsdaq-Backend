@@ -60,8 +60,8 @@
       <file leaf-file-name="newsAPIaylien.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/newsAPIaylien.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            <state relative-caret-position="374">
+              <caret line="50" column="52" lean-forward="true" selection-start-line="50" selection-start-column="52" selection-end-line="50" selection-end-column="52" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -546,8 +546,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/newsAPIaylien.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        <state relative-caret-position="374">
+          <caret line="50" column="52" lean-forward="true" selection-start-line="50" selection-start-column="52" selection-end-line="50" selection-end-column="52" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
