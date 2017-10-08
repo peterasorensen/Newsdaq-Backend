@@ -5,9 +5,14 @@ import time
 import requests
 import argparse
 from pprint import pprint
+import json
+
+list = []
 
 def on_message(ws, message):
     print(message)
+    entry = json.loads(message)
+    list.append(entry)
 
 def on_error(ws, error):
     print(error)
@@ -35,7 +40,7 @@ def main():
     symbols = args.symbols.split(',')
 
     for symbol in symbols:
-        url = 'ws://35.161.245.102/stream?symbol={}&start={}&end={}'.format(symbol,args.start_date,args.end_date)
+        url = 'ws://34.214.11.52/stream?symbol={}&start={}&end={}'.format(symbol,args.start_date,args.end_date)
  
         ws = websocket.WebSocketApp(url,
                                     on_message = on_message,
@@ -43,6 +48,9 @@ def main():
                                     on_close = on_close)
         ws.on_open = on_open
         ws.run_forever()
+        with open('AAPLprices.json', 'w', newline='') as stockPrices:
+            print(list)
+            stockPrices.write(json.dumps(list))
 
 if __name__ == "__main__":
    main() 
