@@ -5,11 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97806c2a-2e3f-4faa-809d-8dc27c895c8f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AAPL.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AAPLprices.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/eggs.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/eggs.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hack.py" afterPath="$PROJECT_DIR$/hack.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,8 +36,8 @@
       <file leaf-file-name="hack.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hack.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="36" column="31" lean-forward="true" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+            <state relative-caret-position="424">
+              <caret line="85" column="38" lean-forward="true" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -550,8 +545,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hack.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="36" column="31" lean-forward="true" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+        <state relative-caret-position="424">
+          <caret line="85" column="38" lean-forward="true" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
