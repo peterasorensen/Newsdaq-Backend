@@ -6,6 +6,36 @@ import requests
 import argparse
 from pprint import pprint
 import json
+from flask import Flask, request
+
+
+app = Flask(__name__)
+@app.route("/")
+def hello():
+    return "Hello World"
+
+@app.route("/stock", methods=['GET'])
+def run():
+    list.clear()
+    symbols = request.args.get('tickers')
+    start_date = request.args.get('start')
+    end_date = request.args.get('end')
+
+    websocket.enableTrace(True)
+
+    symbols = symbols.split(',')
+
+    for symbol in symbols:
+        url = 'ws://34.214.11.52/stream?symbol={}&start={}&end={}'.format(symbol, start_date, end_date)
+
+        ws = websocket.WebSocketApp(url,
+                                    on_message=on_message,
+                                    on_error=on_error,
+                                    on_close=on_close)
+        ws.on_open = on_open
+        ws.run_forever()
+        return json.dumps(list)
+
 
 list = []
 
@@ -41,7 +71,7 @@ def main():
 
     for symbol in symbols:
         url = 'ws://34.214.11.52/stream?symbol={}&start={}&end={}'.format(symbol,args.start_date,args.end_date)
- 
+
         ws = websocket.WebSocketApp(url,
                                     on_message = on_message,
                                     on_error = on_error,
