@@ -26,7 +26,7 @@ def main():
 
     opts = {
       'title': symbols,
-      'sort_by': 'social_shares_count.facebook',
+      'sort_by': 'source.links_in_count',
       'language': ['en'],
       'not_language': ['es', 'it'],
       'published_at_start': start_date,
