@@ -5,11 +5,11 @@ import json
 import datetime
 from flask import Flask, request
 
+app = Flask(__name__)
 @app.route("/")
 def helloWorld():
     return "Try Querying!"
 
-app = Flask(__name__)
 @app.route("/articles", methods=['GET'])
 def newsArticles():
     ticker = request.args.get('tickers')
