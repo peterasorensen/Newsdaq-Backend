@@ -15,7 +15,7 @@ def hello():
     return "Hello World"
 
 @app.route("/stock", methods=['GET'])
-def run():
+def stockPrices():
     list.clear()
     symbols = request.args.get('tickers')
     start_date = request.args.get('start')
