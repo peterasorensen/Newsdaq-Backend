@@ -10,5 +10,3 @@ Newsdaq is a news data acquisition (daq) tool to help users visualize the impact
 * New visualization of graph technology for finance
 * Analyzing the impact of specific current events and their impact on the market
 * Visualization of some arbitrary article analysis
-
-## Sample Inputs/Outputs
